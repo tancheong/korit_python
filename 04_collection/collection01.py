@@ -1,5 +1,4 @@
 # List
-from queue import PriorityQueue
 
 # fruits = ["apple", "banana", "cherry"] # 문자열 리스트
 # numbers = [1, 2, 3, 4, 5] # 숫자 리스트
