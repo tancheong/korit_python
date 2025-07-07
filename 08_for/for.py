@@ -24,13 +24,77 @@ for 변수 in 반복할 대상:
 #     print(a)
 
 # 세트 순회
-a_set = {"사과", "바나나", "체리", "딸기", "오렌지"}
-sorted_a_list = sorted(a_set)
-for a in a_set:
-    print(a)
+# a_set = {"사과", "바나나", "체리", "딸기", "오렌지"}
+# sorted_a_list = sorted(a_set)
+# for a in a_set:
+#     print(a)
 
 # 세트 정렬 추가 설명
-numbers = {3, 1, 4, 1, 5, 9, 2}
-sorted_numbers = sorted(numbers)
-print(sorted_numbers)
-print(type(sorted_numbers))
+# numbers = {3, 1, 4, 1, 5, 9, 2}
+# sorted_numbers = sorted(numbers)
+# print(sorted_numbers)
+# print(type(sorted_numbers))
+
+# word = "python"
+
+# for char in word:
+#     print(char)
+
+# for i in range(5):
+#     print(i)
+
+# for i in range(2, 10, 2): # 2부터 10 미만까지, 2씩 증가
+#     print(i)
+
+# for i in range(1, 10):
+#     print(i)
+#     if i == 5:
+#         print("i가 5입니다. 정지!")
+#         break
+
+# for num in range(1, 10):
+#     if num == 5:
+#         continue
+#     print(num)
+
+# 실습
+# 1부터 100까지 짝수만 출력하기(range)
+
+# 내가 한 실습
+# for num1 in range(1,101):
+#     if num1 % 2 == 1:
+#         continue
+#     print(num1)
+
+# 강사님이 한 실습 1
+# for i in range(1, 101):
+#     if i % 2 == 0:
+#         print(i)
+
+# 강사닙이 한 실습 2
+# for i in range(2, 101, 2):
+#     print(i)
+
+# 리스트의 합 구하기
+# numbers = [10, 20, 30, 40, 50]
+# total = 0
+
+# 강사님이 한 실습
+# for num in numbers:
+#     total += num
+
+# print("리스트의 합은 :", total)
+
+# for문으로 구구단 만들기
+# for dan in range(1, 10):
+#     for n in range(1, 10):
+#         print(f"{dan} X {n} = {dan * n}")
+
+# 평균 구하기
+scores = [80, 90, 75, 88, 92]
+total = 0
+for score in scores:
+    total += score
+
+average = total / len(scores)
+print("평균 점수:", average)
