@@ -150,13 +150,11 @@ for i, value in enumerate(data):
 for i, item in enumerate(data):
     print(f"{i + 1}. {item}")
 
-# 출력되어야 하는 값
+# 출력 되어야 하는 값
 # 1. apple
 # 2. banana
 
-
 # 인덱스가 짝수인 요소만 출력(인덱스: 요소)
-data = [1, -2, 5, -3, 8]
-for index, value in enumerate(data):
-    if index % 2 == 0:
-        print(f"{index}: {value}")
+for i, item in enumerate(data):
+    if i % 2 == 0:
+        print(f"인덱스 : {i}, 값 : {item}")
