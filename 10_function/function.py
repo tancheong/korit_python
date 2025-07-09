@@ -147,5 +147,9 @@
 # 바뀐 리스트를 구하시오
 
 num_list = [11, 16, 88, 75, 46, 97, 3, 14]
-result = ["홀수", "짝수", "짝수", "홀수"]
 
+def parity(number_list):
+    result = list(map(lambda x: "짝수" if x % 2 == 0 else "홀수", number_list))
+    return result
+
+print(parity(num_list))
