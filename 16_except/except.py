@@ -122,21 +122,39 @@
 # 숫자가 아닌 문자를 입력 했을 때, "ValueError" 처리: "숫자를 입력해 주세요" 출력
 # 정상적으로 실행 된다면 해당 키의 값을 넣어둔 result 출력
 # 마지막은 항상 "완료!!"를 출력
-my_dict = {
-    1: "apple",
-    2: "banana",
-    3: "cherry",
-    4: "durian",
-    5: "blueberry"
-}
+
+# 내 실습
+# my_dict = {
+#     1: "apple",
+#     2: "banana",
+#     3: "cherry",
+#     4: "durian",
+#     5: "blueberry"
+# }
+#
+# try:
+#     key = int(input("키(숫자)를 입력하세요: "))
+#     result = my_dict[key]
+# except KeyError:
+#     print("해당 키가 존재 하지 않습니다.")
+# except ValueError:
+#     print("숫자를 입력해주세요.")
+# else:
+#     print(result)
+# finally:
+#     print("완료!!")
+
+# 강사님 실습
+my_dict = {1: "사과", 2: "바나나", 3: "딸기", 4: "포도", 5: "수박"}
 
 try:
-    key = int(input("키(숫자)를 입력하세요: "))
-    result = my_dict[key]
-except KeyError:
-    print("해당 키가 존재 하지 않습니다.")
+    key_input = input("딕셔너리에서 찾을 키(숫자)를 입력해주세요 : ")
+    key = int(key_input) # ValueError가 발생할 수 있는 코드
+    result = my_dict[key] # KeyError가 발생할 수 있는 코드
 except ValueError:
     print("숫자를 입력해주세요.")
+except KeyError:
+    print("해당 키는 존재하지 않습니다.")
 else:
     print(result)
 finally:
